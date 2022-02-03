@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<h2>Delete Book</h2>
 
 <p>
   <strong>Title:</strong>
@@ -20,5 +20,9 @@
   <%= @book.publishedDate %>
 </p>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+<p>Are you sure you want to permanently delete this book?</p>
+
+<td><%= link_to 'Delete', @book, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+
+<%= link_to 'Cancel', books_path %>
