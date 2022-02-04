@@ -8,3 +8,5 @@ rails server --binding=0.0.0.0
 docker ps
 #Find the name and use command below
 docker kill <Name>
+#List all routes
+rails routes
