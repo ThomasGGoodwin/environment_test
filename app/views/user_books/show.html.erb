@@ -2,12 +2,12 @@
 
 <p>
   <strong>User:</strong>
-  <%= @user_book.user_id %>
+  <%= User.find(@user_book.user_id).username %>
 </p>
 
 <p>
   <strong>Book:</strong>
-  <%= @user_book.book_id %>
+  <%= Book.find(@user_book.book_id).title %>
 </p>
 
 <%= link_to 'Edit', edit_user_book_path(@user_book) %> |
